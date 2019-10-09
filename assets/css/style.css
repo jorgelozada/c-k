@@ -1,0 +1,62 @@
+/*BACKGROUNDS*/
+.body-bg{
+    background: white;
+}
+.nav-bg{
+    background: #eeeeee;
+}
+
+/*COLORS*/
+.nav-link a {color:#313131;}
+.nav-link a:hover {color:rgba(0, 0, 0, 0.425); transition: all .5s;}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*HEADER*/
+header{
+    height: var(--nav-height);
+}
+header .brand{
+    line-height: var(--nav-height);
+}
+header .menu ul{
+    line-height: var(--nav-iheight);
+}
+header .menu ul li{
+    padding: 0.55rem;
+}
+header label:hover{ 
+    opacity: 0.6;
+    transition: all .5s;
+}
+
+
+/*CONFIG & CLASS*/
+:root{
+    --nav-height: 3rem;
+    --nav-iheight: 2rem;
+}
+
+@media(max-width:768px){
+    .menu{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background: #e6e6e6;
+        top: var(--nav-height);
+        display: none;
+    }
+    .menu ul{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .menu ul li:hover{
+        background: #0000001c; 
+        transition: all .5s;
+    }
+
+    #btn-menu:checked ~ .menu {display: block;}
+}
