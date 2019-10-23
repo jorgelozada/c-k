@@ -1,14 +1,12 @@
 /*BACKGROUNDS*/
-.body-bg{
-    background: white;
-}
-.nav-bg{
-    background: #eeeeee;
-}
+.body-bg{background: #eeeeee;}
+.body-card{background: #e2e2e2;}
+.deppink{background: deeppink;}
+.color-white{color:white;}
 
 /*COLORS*/
-.nav-link a {color:#313131;}
-.nav-link a:hover {color:rgba(0, 0, 0, 0.425); transition: all .5s;}
+.nav-link a {color:#ffffff;}
+.nav-link a:hover {color:rgba(255, 255, 255, 0.705); transition: all .5s;}
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
@@ -31,6 +29,18 @@ header label:hover{
     opacity: 0.6;
     transition: all .5s;
 }
+header .button-close{
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 50px;
+}
+
+/*FOOTER*/
+.footer-link a{
+    color: white;
+}
+.footer-link a:hover{ color: rgba(255, 255, 255, 0.795); }
 
 
 /*CONFIG & CLASS*/
@@ -38,25 +48,34 @@ header label:hover{
     --nav-height: 3rem;
     --nav-iheight: 2rem;
 }
+.hr-bar{
+    border: 1px solid rgba(255, 255, 255, 0.336); 
+    max-width: 300px;
+}
 
 @media(max-width:768px){
     .menu{
         position: absolute;
-        width: 100%;
-        height: auto;
-        background: #e6e6e6;
-        top: var(--nav-height);
-        display: none;
+        width: 45vw;
+        height: 87%;
+        background: deeppink;
+        margin-left: -100vw;
+        transition: .5s;
+        top:var(--nav-height);
+        z-index: 2;
     }
     .menu ul{
         display: flex; 
         flex-direction: column;
     }
-
     .menu ul li:hover{
-        background: #0000001c; 
+        background: rgba(0, 0, 0, 0.041);
         transition: all .5s;
     }
-
-    #btn-menu:checked ~ .menu {display: block;}
+    .menu a{ font-size: 1.1rem;}
+    .first-link{margin-top: 2rem;}
+    #btn-menu:checked ~ .button-close{display: block;}
+}
+@media(max-width:576px){
+    .menu{width:70vw;}
 }
