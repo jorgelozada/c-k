@@ -1,15 +1,30 @@
 /*BACKGROUNDS*/
-.body-bg{background: #eeeeee;}
-.body-card{background: #e2e2e2;}
 .deppink{background: deeppink;}
 .color-white{color:white;}
+h1,h2,h3{font-size: 2rem;}
+h4,h5{font-size: 1.5rem;}
+h6{font-size: 1rem;}
+
+.sobre-bg{
+    background: url(../img/sobre.jpg);
+    background-size: cover;
+}
+.body-bg{
+    background: url(../img/servicio.png);
+}
+.bg-black{background:black;}
+.bg-one{background: #c4198b;}
+.bg-two{background:#b1177d;}
+.bg-three {background: #99156d;}
+.bg-four{background: #252529;}
 
 /*COLORS*/
 .nav-link a {color:#ffffff;}
 .nav-link a:hover {color:rgba(255, 255, 255, 0.705); transition: all .5s;}
 
 body{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: var(--nav-height);
 }
 
 /*HEADER*/
@@ -32,7 +47,6 @@ header label:hover{
 header .button-close{
     position: absolute;
     top: 0;
-    display: none;
     width: 50px;
 }
 
@@ -45,37 +59,37 @@ header .button-close{
 
 /*CONFIG & CLASS*/
 :root{
-    --nav-height: 3rem;
-    --nav-iheight: 2rem;
+    --nav-height: 4rem;
+    --nav-iheight: 3rem;
 }
 .hr-bar{
     border: 1px solid rgba(255, 255, 255, 0.336); 
+    max-width: 300px;
+}
+.hr-bar-i{
+    border: 1px solid rgba(0, 0, 0, 0.336); 
     max-width: 300px;
 }
 
 @media(max-width:768px){
     .menu{
         position: absolute;
-        width: 45vw;
-        height: 87%;
-        background: deeppink;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, deeppink, deeppink, transparent);
         margin-left: -100vw;
-        transition: .5s;
-        top:var(--nav-height);
-        z-index: 2;
+        z-index: 1;
     }
     .menu ul{
         display: flex; 
         flex-direction: column;
     }
+    .menu ul li{
+        line-height: 1.50rem;
+    }
     .menu ul li:hover{
-        background: rgba(0, 0, 0, 0.041);
         transition: all .5s;
     }
     .menu a{ font-size: 1.1rem;}
     .first-link{margin-top: 2rem;}
-    #btn-menu:checked ~ .button-close{display: block;}
-}
-@media(max-width:576px){
-    .menu{width:70vw;}
 }

@@ -6,57 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/opt.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body class="body-bg">
     
     <!--HEADER-->
-    <header class="main-header d-flex justify-content-between deppink">
-        <label onclick="openMenu()" class="d-none d-md-block cursor-pointer p-2" for="btn-menu"><img src="assets/img/menu-2-white.png" width="30px" alt="menu"></label>
+    <header class="main-header d-flex justify-content-between deppink fixed-top">
+        <label onclick="openMenu()" class="d-none d-md-block cursor-pointer p-3" for="btn-menu"><img src="assets/img/menu-2-white.png" width="30px" alt="menu"></label>
         <input class="d-none" type="checkbox" id="btn-menu">
 
-        <div class="button-close deppink" id="buttonClose">
-            <label class="text-start pl-3 pt-3 font-weight-bold d-block cursor-pointer" onclick="closeMenu()" for="btn-menu">
-                <img src="assets/img/close.png" width="17px" alt="close-menu">
-            </label>
-        </div>
-
         <span class="brand nav-link">
-            <a class="text-decoration-none pl-3 pl-md-0 pr-3 font-weight-bold" href="#">C&K</a>
+            <a class="text-decoration-none pl-3 pl-md-0 pr-3 font-weight-bold" href="#">C & K</a>
         </span>
 
         <nav class="menu text-center" id="sideMenu">
-            <ul id="navItems" class="list-style-none d-flex pr-2 pr-md-0 nav-link">
-                <li class="first-link"><a class="text-decoration-none link" href="#">Inicio</a></li>
-                <li><a class="text-decoration-none link" href="#">Galeria</a></li>
+            <div class="button-close d-none d-md-block" id="buttonClose">
+                <label class="text-start pl-4 pt-4 pb-4 font-weight-bold d-block cursor-pointer" onclick="closeMenu()" for="btn-menu">
+                     <img src="assets/img/close.png" width="17px" alt="close-menu">
+                </label>
+            </div>
+
+            <ul id="navItems" class="list-style-none d-flex pt-md-5 pr-2 pr-md-0 nav-link">
+                <li class="first-link"><a class="text-decoration-none link" href="index.html">Inicio</a></li>
                 <li><a class="text-decoration-none link" href="#">Sobre nosotros</a></li>
+                <li><a class="text-decoration-none link" href="servicios.html">Servicios</a></li>
+                <li><a class="text-decoration-none link" href="#">Galeria</a></li>
                 <li><a class="text-decoration-none link" href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!--SECTIONS-->
-    <section class="main container">
-        <div class="one col-12 pt-5 pb-3">
-            <h2>Diseños expectaculares, y pinturas profesionales</h2>
+    <section class="main" onclick="closeMenu()">
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+        <div class="sobre sobre-bg pr-3 pl-3 pt-5 pb-5">
+            <span class="col-12 p-5 color-white">
+                <h2 class="sobre-title">C & K</h2>
+                <p>Sobre nosotros</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui beatae sequi minima similique consequatur in ad. Quasi maxime architecto perspiciatis, labore distinctio incidunt impedit! Autem eos ea cum molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam totam tenetur dolorum? Unde in enim, velit deleniti alias voluptatum eligendi consequuntur, cum ipsum maxime quos quod, eos asperiores deserunt.</p>
+            </span>
         </div>
 
-        <hr>
+        <div class="servicios color-white">
+            <div class="bg-one col-12 p-5">
+                <h2>SERVICIOS</h2>
+                <hr class="mb-5 hr-bar">
 
-        <div class="dos col-12 pb-3 pt-3">
-            <h2>Equipos, parlantes, consolas y microfonos</h2>
+                <h5>Diseños expectaculares, y pinturas profesionales</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+            </div>
     
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+            <div class="bg-two col-12 p-5">
+                <h5>Equipos, parlantes, consolas y microfonos</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+            </div>
+    
+            <div class="bg-three col-12 p-5">
+                <h5>Servicio de Catering (mesas, manteleria y vajilla)</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="col-12 p-5">
+                <h2>GALERIA</h2>
+                <hr class="mb-5 hr-bar-i">
+            </div>
+
         </div>
     </section>
     <!--SECTIONS-->
 
     <!--FOOTER-->
-    <footer class="container-fluid deppink text-center color-white p-3">
+    <footer class="container-fluid text-center color-white p-3 bg-black">
         <div class="texto-ck negro inicio mb-3 font-weight-bold">&copy; 2019 – C&K ANIMACIONES</div>
 
         <span><hr class="hr-bar m-auto"></span>
