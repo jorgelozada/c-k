@@ -1,22 +1,18 @@
 /*BACKGROUNDS*/
 .deppink{background: deeppink;}
 .color-white{color:white;}
+.color-black{color:black;}
+.color-tblack{color:rgb(49, 49, 49);}
 h1,h2,h3{font-size: 2rem;}
 h4,h5{font-size: 1.5rem;}
 h6{font-size: 1rem;}
 
-.sobre-bg{
-    background: url(../img/sobre.jpg);
-    background-size: cover;
-}
-.body-bg{
-    background: url(../img/servicio.png);
-}
+.bg-white{background:white;}
 .bg-black{background:black;}
-.bg-one{background: #c4198b;}
-.bg-two{background:#b1177d;}
-.bg-three {background: #99156d;}
-.bg-four{background: #252529;}
+.bg-one{background: url("../img/makeup.jpg"); background-size: cover; max-height: 500px;}
+.bg-two{background: url("../img/sound.jpg"); background-position: center; background-size: cover; max-height: 500px;}
+.bg-three{background: url("../img/catering.jpg"); background-position: center; background-size: cover; max-height: 500px;}
+.bg-four{background: #19191b;}
 
 /*COLORS*/
 .nav-link a {color:#ffffff;}
