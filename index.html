@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <title>Document</title>
 </head>
-<body class="body-bg">
+<body>
     
     <!--HEADER-->
-    <header class="main-header d-flex justify-content-between deppink fixed-top">
-        <label onclick="openMenu()" class="d-none d-md-block cursor-pointer p-3" for="btn-menu"><img src="assets/img/menu-2-white.png" width="30px" alt="menu"></label>
+    <header class="main-header d-flex justify-content-between bg-white fixed-top">
+        <label onclick="openMenu()" class="d-none d-md-block cursor-pointer open-menu" for="btn-menu"><img src="assets/img/menu-1-black.png" width="35px" alt="menu"></label>
         <input class="d-none" type="checkbox" id="btn-menu">
 
         <span class="brand nav-link">
@@ -23,17 +23,16 @@
 
         <nav class="menu text-center" id="sideMenu">
             <div class="button-close d-none d-md-block" id="buttonClose">
-                <label class="text-start pl-4 pt-4 pb-4 font-weight-bold d-block cursor-pointer" onclick="closeMenu()" for="btn-menu">
-                     <img src="assets/img/close.png" width="17px" alt="close-menu">
+                <label class="text-start pl-3 pt-3 pb-4 font-weight-bold d-block cursor-pointer" onclick="closeMenu()" for="btn-menu">
+                     <img src="assets/img/close.png" width="15px" alt="close-menu">
                 </label>
             </div>
 
             <ul id="navItems" class="list-style-none d-flex pt-md-5 pr-2 pr-md-0 nav-link">
-                <li class="first-link"><a class="text-decoration-none link" href="index.html">Inicio</a></li>
-                <li><a class="text-decoration-none link" href="#">Sobre nosotros</a></li>
-                <li><a class="text-decoration-none link" href="servicios.html">Servicios</a></li>
-                <li><a class="text-decoration-none link" href="#">Galeria</a></li>
-                <li><a class="text-decoration-none link" href="#">Contacto</a></li>
+                <li class="first-link"><a class="text-decoration-none link" href="#sobre">Acerca de nosotros</a></li>
+                <li><a class="text-decoration-none link" href="#servicios">Servicios</a></li>
+                <li><a class="text-decoration-none link" href="#galeria">Galeria</a></li>
+                <li><a class="text-decoration-none link" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -41,57 +40,80 @@
     <!--SECTIONS-->
     <section class="main" onclick="closeMenu()">
 
-        <div class="sobre sobre-bg pr-3 pl-3 pt-5 pb-5">
-            <span class="col-12 p-5 color-white">
-                <h2 class="sobre-title">C & K</h2>
-                <p>Sobre nosotros</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui beatae sequi minima similique consequatur in ad. Quasi maxime architecto perspiciatis, labore distinctio incidunt impedit! Autem eos ea cum molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam totam tenetur dolorum? Unde in enim, velit deleniti alias voluptatum eligendi consequuntur, cum ipsum maxime quos quod, eos asperiores deserunt.</p>
+        <div id="sobre" class="sobre p-5 bg-white d-flex justify-content-center align-items-center">
+            <span class="col-12">
+                <h2 class="sobre-title text-end mb-5">C & K</h2>
+                <p class="mb-2 target color-tblack font-weight-bold">SOBRE NOSOTROS</p>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui beatae sequi minima similique consequatur in ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente consequatur quisquam aspernatur est culpa fugit cupiditate debitis molestias blanditiis, voluptatibus porro sint cum ullam dolorem at, aliquam repudiandae deleniti.</p>
             </span>
         </div>
 
-        <div class="servicios color-white">
+        <div id="servicios" class="servicios color-white d-flex flex-column">
             <div class="bg-one col-12 p-5">
-                <h2>SERVICIOS</h2>
-                <hr class="mb-5 hr-bar">
-
-                <h5>Diseños expectaculares, y pinturas profesionales</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+                <h5 class="text-uppercase mb-4"><i class="fas fa-angle-right"></i> Diseños expectaculares, y pinturas profesionales</h5>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
             </div>
     
             <div class="bg-two col-12 p-5">
-                <h5>Equipos, parlantes, consolas y microfonos</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+                <h5 class="text-uppercase mb-4"><i class="fas fa-angle-right"></i> Equipos, parlantes, consolas y microfonos</h5>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+                <p>• El mejor sonido</p>
+                <p>• El mejor ambiente</p>
+                <p>• Sin más ideas</p>
             </div>
     
             <div class="bg-three col-12 p-5">
-                <h5>Servicio de Catering (mesas, manteleria y vajilla)</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
+                <h5 class="text-uppercase mb-4"><i class="fas fa-angle-right"></i> Servicio de Catering</h5>
+                <p class="">Mesas, manteleria y vajilla.</p>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque blanditiis magni quisquam quis temporibus tempora praesentium debitis, dignissimos saepe deserunt! Eius sint alias, suscipit impedit magnam porro beatae eum.</p>
             </div>
         </div>
 
-        <div class="galeria">
+        <div class="galeria" id="galeria">
             <div class="col-12 p-5">
-                <h2>GALERIA</h2>
+                <h2 class="">GALERIA</h2>
                 <hr class="mb-5 hr-bar-i">
             </div>
 
+        </div>
+
+        <div id="contacto" class="contacto d-flex justify-content-center pb-4 deppink color-white flex-column">
+            <div class="col-12 text-center">
+                <h5 class="mt-5 text-center">CONTACTO</h5>
+            </div>
+
+            <div class="formu m-auto col-12 pt-5">
+                <form class="d-flex flex-column" action="#" method="">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input class="p-2 mb-4 poppins" placeholder="Jorge Lozada" type="text" name="name" id="nombre">
+
+                    <label for="tel">Telefono</label>
+                    <input class="p-2 mb-4 poppins" placeholder="+54 9 11 2699-9271" type="text" name="tel" id="nombre">
+
+                    <label for="motivo">Motivo de consulta</label>
+                    <input class="p-2 mb-4 poppins" placeholder="Presupuesto, consulta, etc." type="text" name="motivo" id="nombre">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="p-2 mb-4 poppins" placeholder="Escribe tu mensaje aquí" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+                    <input class="btn-submit pr-3 pl-3 pt-2 pb-2 m-auto poppins cursor-pointer" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
     </section>
     <!--SECTIONS-->
 
     <!--FOOTER-->
-    <footer class="container-fluid text-center color-white p-3 bg-black">
-        <div class="texto-ck negro inicio mb-3 font-weight-bold">&copy; 2019 – C&K ANIMACIONES</div>
-
-        <span><hr class="hr-bar m-auto"></span>
-
-        <div class="d-flex justify-content-center flex-column footer-link mt-3"> 
-            <a target="_blank" class="text-decoration-none" href="https://wa.me/5491126999271?text=Hola,%20enviame%20un%20mensaje%20por%20aquí"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a target="_blank"  class="text-decoration-none" href="mailto:chiquiykathygonzalez@gmail.com"><i class="fas fa-envelope-square"></i> Chiquiykathygonzalez@gmail.com</a>
-        </div>
+    <footer class="container-fluid text-center deppink p-3">
+        <div class="mb-3 font-weight-bold color-white">&copy; 2019 – C&K ANIMACIONES</div>
     </footer>
     <!--FOOTER-->
 
+    <!--BUTTON-FLOTANTE-->
+    <div class="flotante flotante-bg ml-3 bg-black text-center pr-3 pl-3 pt-1 pb-1">
+        <a class="text-decoration-none color-link-black pr-2" target="_blank" class="text-decoration-none" href="https://wa.me/5491126999271?text=Hola,%20enviame%20un%20mensaje%20por%20aquí"><i class="fab fa-whatsapp"></i></a>
+        <a class="text-decoration-none color-link-black" target="_blank"  class="text-decoration-none" href="mailto:chiquiykathygonzalez@gmail.com"><i class="fas fa-envelope-square"></i></a>
+    </div>
 
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/font-awesome.min.js"></script>

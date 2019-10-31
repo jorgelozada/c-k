@@ -2,25 +2,30 @@
 .deppink{background: deeppink;}
 .color-white{color:white;}
 .color-black{color:black;}
-.color-tblack{color:rgb(49, 49, 49);}
+.color-deeppink{color: deeppink;}
+.color-tblack{color:rgb(170, 170, 170);}
 h1,h2,h3{font-size: 2rem;}
 h4,h5{font-size: 1.5rem;}
 h6{font-size: 1rem;}
 
 .bg-white{background:white;}
-.bg-black{background:black;}
-.bg-one{background: url("../img/makeup.jpg"); background-size: cover; max-height: 500px;}
-.bg-two{background: url("../img/sound.jpg"); background-position: center; background-size: cover; max-height: 500px;}
-.bg-three{background: url("../img/catering.jpg"); background-position: center; background-size: cover; max-height: 500px;}
-.bg-four{background: #19191b;}
+.bg-one{background: url("../img/makeup.jpg"); background-size: cover; min-height: auto; max-height: 1000px;}
+.bg-two{background: url("../img/sound.jpg"); background-position: center; background-size: cover; min-height: auto; max-height: 1000px;}
+.bg-three{background: url("../img/catering.jpg"); background-position: center; background-size: cover; min-height: auto; max-height: 1000px;}
 
 /*COLORS*/
-.nav-link a {color:#ffffff;}
-.nav-link a:hover {color:rgba(255, 255, 255, 0.705); transition: all .5s;}
+.nav-link a {color:#222222;}
+.nav-link a:hover {color:deeppink; transition: all .5s;}
+
+.color-link-black{color:rgb(255, 255, 255);}
+.color-link-black:hover{color: rgba(255, 255, 255, 0.507); transition: .5s;}
 
 body{
     font-family: 'Poppins', sans-serif;
     margin-top: var(--nav-height);
+}
+.poppins{
+    font-family: 'Poppins', sans-serif;
 }
 
 /*HEADER*/
@@ -45,6 +50,36 @@ header .button-close{
     top: 0;
     width: 50px;
 }
+header .open-menu{
+    padding: 6px;
+}
+
+/*SECTION*/
+.sobre{
+    max-height: 1000px; min-height: 500px;
+}
+.contacto .formu{
+    max-width: 400px;
+}
+.contacto .formu input[type=text],textarea{
+    background: transparent;
+    border-left: 0; border-right: 0; border-top: 0; border-bottom: 2px solid rgba(255, 255, 255, 0.507);
+    color: white;
+}
+.contacto .formu input::placeholder,textarea::placeholder{
+    color: rgba(255, 255, 255, 0.637);
+}
+.contacto .formu input[type="submit"]{
+    max-width: 150px;
+    background: rgba(255, 255, 255, 0.233);
+    color: white;
+    border: 0;
+    border-radius: 0.25rem;
+}
+.contacto .formu input[type="submit"]:hover{
+    background: rgba(206, 206, 206, 0.507);
+    transition: .5s;
+}
 
 /*FOOTER*/
 .footer-link a{
@@ -52,33 +87,52 @@ header .button-close{
 }
 .footer-link a:hover{ color: rgba(255, 255, 255, 0.795); }
 
+/*FLOTANTE*/
+.flotante{
+    max-width: 300px;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+}
+.flotante-bg{background: rgba(0, 0, 0, 0.555);}
+
+.flotante a{
+    font-size: 2rem;
+}
 
 /*CONFIG & CLASS*/
 :root{
-    --nav-height: 4rem;
-    --nav-iheight: 3rem;
+    --nav-height: 3rem;
+    --nav-iheight: 2rem;
 }
 .hr-bar{
-    border: 1px solid rgba(255, 255, 255, 0.336); 
-    max-width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.096); 
+    max-width: 200px;
 }
 .hr-bar-i{
-    border: 1px solid rgba(0, 0, 0, 0.336); 
+    border: 1px solid rgba(0, 0, 0, 0.116); 
+    max-width: 200px;
+}
+.hr-bar-deepink{
+    border: 1px solid rgba(255, 20, 145, 0.781); 
     max-width: 300px;
+    box-shadow: 0 5px 15px deeppink;
 }
 
 @media(max-width:768px){
     .menu{
         position: absolute;
-        width: 100vw;
+        width: 70vw;
         height: 100vh;
-        background: linear-gradient(to bottom, deeppink, deeppink, transparent);
+        background: rgba(255, 20, 145, 0.918);
         margin-left: -100vw;
         z-index: 1;
+        transition: .5s;
     }
     .menu ul{
         display: flex; 
         flex-direction: column;
+        margin-top: 25%;
     }
     .menu ul li{
         line-height: 1.50rem;
@@ -88,4 +142,6 @@ header .button-close{
     }
     .menu a{ font-size: 1.1rem;}
     .first-link{margin-top: 2rem;}
+    .nav-link a {color:#ffffff;}
+    .nav-link a:hover {color:rgba(255, 255, 255, 0.651); transition: all .5s;}
 }
