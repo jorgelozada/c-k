@@ -17,6 +17,9 @@ h6{font-size: 1rem;}
 .nav-link a {color:#222222;}
 .nav-link a:hover {color:deeppink; transition: all .5s;}
 
+.nav-brand a {color:#222222;}
+.nav-brand a:hover {color:deeppink; transition: all .5s;}
+
 .color-link-black{color:rgb(255, 255, 255);}
 .color-link-black:hover{color: rgba(255, 255, 255, 0.507); transition: .5s;}
 
